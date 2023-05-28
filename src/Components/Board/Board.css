@@ -4,11 +4,13 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	margin-bottom: 500px;
 }
 .boardTop
 {
-	display: flex;	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
 }
 
 .boardTopMore
@@ -18,15 +20,17 @@
 }
 .boardDropdown
 {
-	background-color: #fff;
+	background-color: #c0d3d6;
 	width: 130px;
-	padding: 10px;
-	border-radius: 3px;
+	border-radius: 10px;
 	box-shadow: 1px 0 20px rgba(0,0,0,0.05);
+	margin-top: -27px;
+	margin-right: 5px;
 }
 
 .boardDropdown p
 {
+	margin-left:8%;
 	cursor: pointer;
 }
 

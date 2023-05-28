@@ -1,15 +1,15 @@
 .card
 {
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     background-color: #fff;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    justify-content: space-between;
 }
 .card_top
 {
-    
     gap: 5px;
 }
 .card_top_labels
@@ -20,7 +20,7 @@
 .card_top svg
 {
     opacity: 0;
-    transition: 200ms;
+    transition: 500ms;
 }
 .card:hover .card_top svg
 {
@@ -55,14 +55,15 @@
 }
 .cardDropdown
 {
-	background-color: #fff;
-	width: 130px;
-	padding: 10px;
-	border-radius: 3px;
+	background-color: #c0d3d6;
+	width: 100px;
+    border-radius: 10px;
 	box-shadow: 1px 0 20px rgba(0,0,0,0.05);
+    margin-top: -25px;
 }
 
 .cardDropdown p
 {
+    margin-left: 8%;
 	cursor: pointer;
 }

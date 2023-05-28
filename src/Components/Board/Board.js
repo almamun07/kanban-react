@@ -9,13 +9,15 @@ function Board(props) {
   const [showDropdown, setShowDropdown] = useState(false);
 
 
+
+
   return (
     <div className="board">
       <div className="boardTop">
         <p className="boardTopTitle">
           {props.board?.title}<span>{` ${props.board?.cards?.length}`}</span>
         </p>
-        <div className='boardTopMore' onClick= {() => setShowDropdown(true)}>
+        <div className='boardTopMore' onClick={() => setShowDropdown(!showDropdown) }>
           <MoreHorizontal />
           {showDropdown && (
             <Dropdown onClose={() => setShowDropdown(false)}>

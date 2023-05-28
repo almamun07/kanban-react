@@ -12,8 +12,17 @@ function Card(props) {
     onDragEnter={() => 
     props.handleDragEnter(props.card?.id, props.boardId)}
     >
+        <div className="card_left">
+            <div className='cardTitle'>
+                {props.card?.title}
+            </div>
+            
+            <div className='cardFooter'>
+                {props.card?.title}
+            </div>
+        </div>
         <div className='card_top'>
-            <div className='cardTopMore' onClick= {() => setShowDropdown(true)}>
+            <div className='cardTopMore' onClick= {() => setShowDropdown(!showDropdown)}>
                 <MoreHorizontal />
                 {showDropdown && (
                     <Dropdown onClose={() => setShowDropdown(false)}>
@@ -24,14 +33,6 @@ function Card(props) {
                 )}
             </div>
         </div>
-        <div className='cardTitle'>
-            {props.card?.title}
-        </div>
-        
-        <div className='cardFooter'>
-            {props.card?.title}
-        </div>
-
     </div>
   )
 }
